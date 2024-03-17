@@ -37,6 +37,8 @@ a {
 
 .hiv {
     margin-left: 40px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .hiv a {
@@ -97,9 +99,57 @@ h2 {
     text-align: center;
 }
 
+/*
 @media (max-width: 1200px) {
     .navbar {
         height: 120px;
     }
 
 }
+*/
+
+nav ul {
+    padding: 0;
+    list-style: none;
+}
+  
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+  
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+  
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+  
+@media (max-width: 1200px) {
+    .menu-toggle {
+      display: block;
+    }
+
+  
+    nav ul {
+      display: none;
+      width: 100%;
+      text-align: center;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  
+    nav ul.active {
+      display: block;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  }
