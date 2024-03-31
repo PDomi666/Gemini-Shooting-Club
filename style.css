@@ -4,12 +4,13 @@ h1 {
     display: inline-block; /* Hozzáadva, hogy a logó mellett maradjon */
     margin: auto;
     vertical-align: middle;
+    color: white;
 }
 
 body {
     background-color: rgb(20, 20, 20);
     margin: 0px;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     font-size: 110%;
 }
 
@@ -87,19 +88,20 @@ a {
 
 p {
     text-align: justify;
-    margin: 40px;
-    font-size: 25px;
+    margin: auto;
+    font-size: auto;
     padding: 20px;
 }
 
 .span {
+    font-size: larger;
     padding: 10px 10px;
 }
 
 h2 {
     margin-top: 60px;
     margin-bottom: 30px;
-    font-size: 45px;
+    font-size: auto;
 }
 
 nav {
@@ -129,27 +131,63 @@ nav ul li a:hover {
     margin-right: auto;
 }
 
-.nodot {
-    list-style: none;
-}
-
 .nodot li {
+    list-style: none;
     padding: 10px;
 }
 
-.col {
-    fit
+.nodot2 li {
+    list-style: none;
+    padding: 5px;
+    font-size: auto;
+}
+
+.nodot3 li {
+    list-style: none;
+    padding: 40px;
+    font-size: auto;
+
+}
+
+.kozep {
+    padding-left: auto;
 }
 
 .kicsi {
     height: 50px;
+    position: center;
+}
+
+.kep {
+    height: 80px;
+    position: center;
 }
 
 footer {
-    height: auto;
-    max-height: ;
+    height: fit-content;
+    max-height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
   
+@media (max-width: 800px) {
+    p {
+        font-size: 10px;
+        padding: 0px;
+    }
+
+    h2 {
+        font-size: 20px;
+        margin: 5px, 0px, 0px, 0px;
+    }
+
+    .paros, .para{
+        padding: 0px, 20px;
+    }
+}
+
 @media (max-width: 1000px) {
     .menu-toggle {
       display: block;
