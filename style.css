@@ -1,9 +1,9 @@
 h1 {
     text-align: left;
-    height: 50px;
-
-    line-height: 45px; /* Hozzáadva, hogy középre kerüljön a keretben */
+    height: auto; /* Módosítva az eredeti 50px-ről, hogy alkalmazkodjon a különböző eszközök méretéhez */
     display: inline-block; /* Hozzáadva, hogy a logó mellett maradjon */
+    margin: auto;
+    vertical-align: middle;
 }
 
 body {
@@ -13,9 +13,19 @@ body {
     font-size: 110%;
 }
 
+.cim {
+    margin-left: auto
+}
+
 #logo {
-    height: 50px;
+    height: 50px; /* Módosítva az eredeti 50px-ről, hogy alkalmazkodjon a különböző eszközök méretéhez */
     float: left;
+    vertical-align: middle;
+}
+
+.menu {
+    margin: 0px;
+    padding: auto;
 }
 
 .navbar {
@@ -25,9 +35,8 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 70px;
-    justify-content: center;
-
+    align-items: center;
+    height: fit-content;
 }
 
 a {
@@ -42,7 +51,6 @@ a {
 .hiv {
     margin-left: 40px;
     justify-content: space-between;
-    align-items: center;
 }
 
 .hiv a {
@@ -59,7 +67,7 @@ a {
 }
 
 .paratlan {
-    background-image: url("képek/fokep4.jpg");
+    background-image: url("képek/fokep1.jpg");
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
@@ -90,32 +98,23 @@ h2 {
     font-size: 45px;
 }
 
-.fixed {
-    height: 60px;
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 20px 0px rgb(255, 255, 255);
-}
-
-.kozep {
-    text-align: center;
+nav {
+    padding: auto;
 }
 
 nav ul {
-    padding: 0;
+    padding: auto;
     list-style: none;
 }
   
 nav ul li {
     display: inline-block;
-    margin-right: 20px;
+    margin: 5px;
 }
   
-nav ul li a {
+nav ul li a:hover {
     text-decoration: none;
-    color: #fff;
+    color: rgb(124, 6, 6);
 }
   
 .menu-toggle {
@@ -123,16 +122,30 @@ nav ul li a {
     cursor: pointer;
     font-size: 30px;
     vertical-align: middle;
+    margin-right: auto;
+}
+
+.nodot {
+    list-style: none;
+}
+
+.nodot li {
+    padding: 10px;
+}
+
+.col {
+    fit
+}
+
+.kicsi {
+    height: 50px;
 }
   
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
     .menu-toggle {
       display: block;
       float: left;
-    }
-
-    .logo {
-        margin-left: 0px;
+      margin-right: 30px;
     }
 
     nav {
@@ -147,12 +160,13 @@ nav ul li a {
       text-align: center;
       background-color: black;
       position: absolute;
-      top: 60px;
+      top: 70px;
       right: 0px;
     }
   
     nav ul.active {
         display: block;
+
     }
   
     nav ul li {
@@ -160,12 +174,27 @@ nav ul li a {
       justify-content: center;
       align-items: center;
       height: 45px;
-      border: 1px solid grey;
+      border-top: 1px solid grey;
+      &:last-child { border-bottom: 1px solid grey; }
       width: 300px;
     }
 
-    nav ul li a:hover {
-        background-color: rgb(124, 6, 6);
-        color: rgb(156, 156, 156);
-    }
   }
+
+@media (max-width: 500px) {
+    h1 {
+        justify-items: center;
+        font-size: 24px;
+        vertical-align: bottom;
+    }
+}
+
+@media (min-width: 2000px) {
+    h1{
+        font-size: 60px;
+    }
+
+    #logo {
+        height: 80px;
+    }
+}
