@@ -30,17 +30,18 @@
         <div class="bc">
             <div class="modal">
                 <span class="close">&times;</span>
-                    <img class="modal-content" id="modal-image">
-                    <div class="modal-content" id="image-caption"></div>
-                </div>
-            </div>
+                  <img class="modal-content" id="modal-image">
+                  <div class="modal-content" id="image-caption"></div>
+                  <button id="prev-button">Previous</button>
+                  <button id="next-button">Next</button>
+              </div>
               
-            <div class="image-gallery">
-                <img src="fegyverek/IMG_1728.jpg" alt="Image 1" data-caption="Első kép leírása">
-                <img src="fegyverek/IMG_1734.jpg" alt="Image 2" data-caption="Második kép leírása">
-                <img src="fegyverek/IMG_1746.jpg" alt="Image 3" data-caption="Harmadik kép leírása">
-                <!-- Add more images as needed -->
-            </div>
+              <div class="image-gallery">
+                <img src="fegyverek/IMG_1728.jpg" alt="Image 1" data-images='["fegyverek/IMG_1728.jpg", "large_image1_2.jpg", "large_image1_3.jpg"]' data-caption="Első kép leírása">
+                <img src="fegyverek/IMG_1732.jpg" alt="Image 2" data-images='["large_image2_1.jpg", "large_image2_2.jpg"]' data-caption="Második kép leírása">
+                <img src="fegyverek/IMG_1746.jpg" alt="Image 1" data-images='["large_image1_1.jpg", "large_image1_2.jpg", "large_image1_3.jpg"]' data-caption="Első kép leírása">
+                <!-- Add more small images as needed -->
+              </div>              
         </div>
     </div>
     <footer>
