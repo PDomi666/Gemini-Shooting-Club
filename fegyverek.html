@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini shooting club</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+
+        <div class="cim col-lg-6 col-10">
+            <a href="index.html"><img id="logo" src="képek/Clipboard01.jpg" alt="Gemini logo">
+                <h1>Gemini Shooting Club</h1>
+            </a>
+        </div>
+        <nav>
+            <div class="menu-toggle col-lg-6 col-2" onclick="toggleMenu()">&#9776;</div>
+            <ul class="menu">
+                <li><a href="">Bemutatkozás</a></li>
+                <li><a href="fegyverek.html">Fegyverek</a></li>
+                <li><a href="">Menüpont 4</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="keret">
+        <div class="bc">
+            <div class="modal">
+                <span class="close">&times;</span>
+                    <img class="modal-content" id="modal-image">
+                    <div class="modal-content" id="image-caption"></div>
+                </div>
+            </div>
+              
+            <div class="image-gallery">
+                <img src="fegyverek/IMG_1728.jpg" alt="Image 1" data-caption="Első kép leírása">
+                <img src="fegyverek/IMG_1734.jpg" alt="Image 2" data-caption="Második kép leírása">
+                <img src="fegyverek/IMG_1746.jpg" alt="Image 3" data-caption="Harmadik kép leírása">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="col-12 col-12 span">
+            <span>© Gemini Shooting Club 2024</span>
+        </div>
+        <div class="col-lg-3 kozep">
+            <ul class="nodot">
+                <li><a href="https://www.facebook.com/profile.php?id=100042941773448" target="_blank"><img src="képek/face.png" class="kicsi"></a></li>
+                <li><a href="https://shorturl.at/acpxU" target="_blank"><img src="képek/map.png" class="kicsi"></a></li>
+            </ul>
+        </div>
+        <div class="col-lg-3 col-12">
+            <span class="span">Kapcsolat</span>
+            <ul class="nodot2">
+                <li>&phone; +36 70 934 1945 (Radics László)</li>
+                <li>&#9993; info@geminiloter.hu</li>
+            </ul>
+        </div>
+        <div class="col-lg-6 col-12">
+            <ul class="nodot3" style="display:flex; flex-wrap:wrap;">
+                <li><a href="https://practiscore.com/clubs/gemini_shooting_range" target="_blank"><img src="képek/proba.png" class="kep"></a></li>
+                <li><a href="https://www.idpa.com/clubs/gemini-shooting-club/" target="_blank"><img src="képek/idpa.png" class="kep"></a></li>
+                <li><a href="https://www.shootingpress.hu/magyarorszagi-loterek-gemini-shooting-club/" target="_blank"><img src="képek/shootingpress.png" class="kep"></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

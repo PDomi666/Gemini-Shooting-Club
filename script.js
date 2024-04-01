@@ -34,3 +34,28 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 });
 
+
+
+// Get the modal
+var modal = document.querySelector('.modal');
+
+// Get the image, caption and insert them inside the modal
+var images = document.querySelectorAll('.image-gallery img');
+var modalImg = document.getElementById("modal-image");
+var captionText = document.getElementById("image-caption");
+
+images.forEach(function(image) {
+  image.addEventListener('click', function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.textContent = this.dataset.caption; // Set the caption text to the value of the "data-caption" attribute
+  });
+});
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+};
