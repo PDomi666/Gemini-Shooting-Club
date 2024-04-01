@@ -171,7 +171,13 @@ footer {
     align-items: center;
     flex-wrap: wrap;
 }
-  
+
+@media (max-width: 992px) {
+    .nodot {
+        display: flex;
+    }
+}
+
 @media (max-width: 800px) {
     p {
         font-size: 10px;
